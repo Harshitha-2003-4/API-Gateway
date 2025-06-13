@@ -1,17 +1,20 @@
-#  AWS Lambda + API Gateway: Hello World
+#  Serverless Web App using AWS Lambda, API Gateway & S3
 
-This project demonstrates how to build a simple serverless API on AWS using **Lambda** and **API Gateway** that returns a "Hello World" message.
+This project demonstrates a simple **web application** that interacts with an AWS Lambda function using **API Gateway**, and is **hosted on S3** as a static website.
 
+---
 
-## Features
+## Project Overview
 
--  AWS Lambda function (Python)
--  API Gateway (public HTTP endpoint)
--  Integration via GET method
--  JSON response with CORS enabled
+-  **Lambda Function** handles HTTP requests and returns personalized greetings
+-  **API Gateway** exposes the Lambda to the internet
+-  **HTML + JavaScript** frontend hosted on **Amazon S3 Static Website**
+-  **CORS** enabled for cross-origin access
 
-##  Output
+---
 
-> Accessing the API returns:  
+##  Use Case
 
-"Hello World"
+>  User enters their name on the webpage  
+>  A request is sent to API Gateway  
+>  Lambda function processes it and returns:  
